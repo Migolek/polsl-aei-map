@@ -1,0 +1,82 @@
+@import '../../styles/_variables.scss';
+
+.homeViewSection {
+  padding: 64px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    .logoWrapper {
+      width: 100%;
+      animation: logoAnimation 5s;
+
+      &.fullSize {
+        position: absolute;
+        background: #fff;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+
+    .description {
+      font-size: $font_size_extended;
+      color: $font_color_gray;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 500;
+      max-width: 500px;
+      margin: 0 auto 64px auto;
+    }
+  }
+
+  .descriptionFooter {
+    display: flex;
+    justify-content: space-between;
+
+    .subject {
+      color: $font_color_gray;
+    }
+
+    .authors {
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        > li {
+          color: $font_color_gray;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    position: absolute;
+  }
+
+  100% {
+    position: relative;
+  }
+}
