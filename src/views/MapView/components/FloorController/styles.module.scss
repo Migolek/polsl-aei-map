@@ -1,0 +1,35 @@
+@import '../../../../styles/variables';
+
+.arrowsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .arrow {
+    width: 48px;
+    height: 48px;
+    box-shadow: $box_shadow_basic;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+        fill: $color_gray;
+      }
+    }
+  }
+
+  .label {
+    display: block;
+    font-size: $font_size_extended;
+    font-weight: bold;
+    color: $color_blue;
+    margin: 32px 0;
+  }
+}
