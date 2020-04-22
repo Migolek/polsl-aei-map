@@ -1,0 +1,34 @@
+@import '../../../../styles/variables';
+
+.showOptionsSection {
+
+  .title {
+    margin-bottom: 16px;
+    display: block;
+    color: $color_blue;
+    font-size: $font_size_extended;
+    font-weight: bold;
+  }
+
+  .optionsList {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      input {
+        width: 24px;
+        height: 24px;
+      }
+
+      span {
+        margin-left: 16px;
+        color: $color_gray;
+      }
+    }
+  }
+}
