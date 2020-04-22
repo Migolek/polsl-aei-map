@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+
+.mapViewSection {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      height: 100px;
+      width: auto;
+    }
+
+    .serachbarWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 250px;
+      width: 100%;
+
+      .searchbar {
+        width: 48px;
+        height: 48px;
+        box-shadow: $box_shadow_basic;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+          width: 24px;
+          height: 24px;
+
+          path {
+            fill: $color_gray;
+          }
+        }
+      }
+    }
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+
+    .mapWrapper {
+      flex: 1;
+    }
+
+    .sidebarWrapper {
+      width: 100%;
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
