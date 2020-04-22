@@ -1,11 +1,7 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-} from "react-router-dom";
-
-import HomeView from '../Views/HomeView';
-import MapView from '../Views/MapView';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomeView from 'views/HomeView';
+import MapView from 'views/MapView';
 
 const AppRouter = () => {
   return (
@@ -15,6 +11,5 @@ const AppRouter = () => {
     </Router>
   );
 };
-
 
 export default AppRouter;

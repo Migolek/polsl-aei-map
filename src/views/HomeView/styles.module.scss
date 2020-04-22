@@ -14,18 +14,6 @@
 
     .logoWrapper {
       width: 100%;
-      animation: logoAnimation 5s;
-
-      &.fullSize {
-        position: absolute;
-        background: #fff;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-      }
 
       img {
         display: block;
@@ -56,7 +44,6 @@
     }
 
     .authors {
-
       ul {
         list-style: none;
         margin: 0;
@@ -68,15 +55,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes logoAnimation {
-  0% {
-    position: absolute;
-  }
-
-  100% {
-    position: relative;
   }
 }
