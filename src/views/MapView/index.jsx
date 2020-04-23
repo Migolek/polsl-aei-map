@@ -3,6 +3,7 @@ import React from 'react';
 import PolslLogo from '../../assets/polsl-logo.png';
 
 import FloorController from './components/FloorController';
+import HintTile from './components/HintTile';
 import Map from './components/Map';
 import SearchBar from './components/SearchBar';
 import ShowOptions from './components/ShowOptions';
@@ -42,6 +43,7 @@ class MapView extends React.Component {
             <ShowOptions />
           </div>
         </div>
+        {/* <HintTile /> */}
       </section>
     );
   }

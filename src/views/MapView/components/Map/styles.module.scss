@@ -7,13 +7,5 @@
   svg {
     width: 100%;
     height: 100%;
-
-    #rooms g > * {
-      fill: $color_blue !important;
-    }
   }
-}
-
-svg g g * {
-  fill: $color_blue !important;
 }

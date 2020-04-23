@@ -11,6 +11,7 @@ import { ReactComponent as Floor8 } from 'assets/map-files/8_floor.svg';
 import { ReactComponent as Floor9 } from 'assets/map-files/9_floor.svg';
 import PropTypes from 'prop-types';
 
+import './map-style.css';
 import * as styles from './styles.module.scss';
 
 export default class Map extends Component {

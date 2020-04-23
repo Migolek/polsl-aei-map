@@ -1,0 +1,10 @@
+
+.rooms > g > * {
+  cursor: pointer;
+}
+
+.rooms > g:hover > rect,
+.rooms > g:hover > path {
+  fill: #284C8E !important;
+  opacity: 0.6;
+}
