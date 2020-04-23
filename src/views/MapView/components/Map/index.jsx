@@ -15,28 +15,31 @@ import * as styles from './styles.module.scss';
 
 export default class Map extends Component {
   static propTypes = {
-    currentFloor: PropTypes.number.isRequired,
+    currentFloor: PropTypes.number,
   };
 
-  static defaultProps = {
-    currentFloor: 0,
-  };
-
-  static mapConfig = [Floor0, Floor1];
+  static mapConfig = [
+    <Floor0 key="0" />,
+    <Floor1 key="1" />,
+    <Floor2 key="2" />,
+    <Floor3 key="3" />,
+    <Floor4 key="4" />,
+    <Floor5 key="5" />,
+    <Floor6 key="6" />,
+    <Floor7 key="7" />,
+    <Floor8 key="8" />,
+    <Floor9 key="9" />,
+  ];
 
   renderMap = () => {
     const { currentFloor } = this.props;
 
     if (currentFloor >= 0 && currentFloor < 9) {
-      return Map.mapConfig[currentFloor].svg;
-    } else return Map.mapConfig[0].svg;
+      return Map.mapConfig[currentFloor];
+    } else return Map.mapConfig[0];
   };
 
   render() {
-    return (
-      <section className={styles.mapSection}>
-        <Floor0 />
-      </section>
-    );
+    return <section className={styles.mapSection}>{this.renderMap()}</section>;
   }
 }

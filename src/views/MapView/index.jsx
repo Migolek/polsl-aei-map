@@ -1,32 +1,44 @@
 import React from 'react';
-import { ReactComponent as Search } from 'assets/search-solid.svg';
 
 import PolslLogo from '../../assets/polsl-logo.png';
 
 import FloorController from './components/FloorController';
 import Map from './components/Map';
+import SearchBar from './components/SearchBar';
 import ShowOptions from './components/ShowOptions';
 
 import * as styles from './styles.module.scss';
 
 class MapView extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      currentFloor: 0,
+    };
+  }
+
+  setFloor = floorNumber => {
+    this.setState({ currentFloor: floorNumber });
+  };
+
   render() {
+    const { currentFloor } = this.state;
+
     return (
       <section className={styles.mapViewSection}>
         <div className={styles.headerWrapper}>
           <img src={PolslLogo} alt="polsl-logo" />
           <div className={styles.serachbarWrapper}>
-            <div className={styles.searchbar}>
-              <Search />
-            </div>
+            <SearchBar />
           </div>
         </div>
         <div className={styles.contentWrapper}>
           <div className={styles.mapWrapper}>
-            <Map currentFloor={0} />
+            <Map currentFloor={currentFloor} />
           </div>
           <div className={styles.sidebarWrapper}>
-            <FloorController />
+            <FloorController setFloor={this.setFloor} currentFloor={currentFloor} />
             <ShowOptions />
           </div>
         </div>

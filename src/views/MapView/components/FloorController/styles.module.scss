@@ -14,6 +14,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: $color_white;
+    border: none;
+
+    &.hidden {
+      opacity: 0;
+    }
 
     svg {
       width: 24px;
