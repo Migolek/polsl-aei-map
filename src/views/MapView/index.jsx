@@ -16,19 +16,13 @@ class MapView extends React.Component {
 
     this.state = {
       currentFloor: 0,
-      hintPosition: {
-        x: null,
-        y: null,
-      },
     };
   }
 
   setFloor = floorNumber => this.setState({ currentFloor: floorNumber });
 
-  setHintPosition = position => this.setState({ hintPosition: position });
-
   render() {
-    const { currentFloor, hintPosition } = this.state;
+    const { currentFloor } = this.state;
 
     return (
       <section className={styles.mapViewSection}>
@@ -40,14 +34,14 @@ class MapView extends React.Component {
         </div>
         <div className={styles.contentWrapper}>
           <div className={styles.mapWrapper}>
-            <Map currentFloor={currentFloor} setHintPosition={this.setHintPosition} />
+            <Map currentFloor={currentFloor} />
           </div>
           <div className={styles.sidebarWrapper}>
             <FloorController setFloor={this.setFloor} currentFloor={currentFloor} />
             <ShowOptions />
           </div>
         </div>
-        <HintTile position={hintPosition} />
+        <HintTile />
       </section>
     );
   }

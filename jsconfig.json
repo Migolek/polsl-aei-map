@@ -5,7 +5,8 @@
       "components/*": ["./components/*"],
       "router/*": ["./router/*"],
       "views/*": ["./views/*"],
-      "assets/*": ["./assets/*"]
+      "assets/*": ["./assets/*"],
+      "store/*": ["./store/*"]
     },
     "jsx": "react"
   },

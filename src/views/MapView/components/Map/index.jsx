@@ -51,6 +51,7 @@ export default class Map extends Component {
 
   handleClickMap = event => {
     console.log(event.target);
+    // TODO set hint position
   };
 
   renderMap = () => {

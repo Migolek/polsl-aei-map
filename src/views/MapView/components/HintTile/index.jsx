@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import * as styles from './styles.module.scss';
 
-export default class HintTile extends Component {
+const mapStateToProps = state => ({
+  position: state.hint.position,
+});
+
+class HintTile extends Component {
   static propTypes = {
     position: PropTypes.object,
     data: PropTypes.object,
@@ -43,3 +48,5 @@ export default class HintTile extends Component {
     );
   }
 }
+
+export default connect(mapStateToProps, null)(HintTile);
