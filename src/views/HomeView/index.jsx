@@ -13,10 +13,7 @@ class HomeView extends React.Component {
         <section className={styles.homeViewSection}>
           <div className={styles.contentWrapper}>
             <div className={styles.logoWrapper}>
-              <Spring
-                config={{ duration: 1000 }}
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}>
+              <Spring config={{ duration: 1000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
                 {props => <img style={props} src={PolslLogo} alt="polsl-logo" />}
               </Spring>
             </div>

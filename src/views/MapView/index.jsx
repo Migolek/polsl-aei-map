@@ -3,6 +3,7 @@ import React from 'react';
 import PolslLogo from '../../assets/polsl-logo.png';
 
 import FloorController from './components/FloorController';
+import HintTile from './components/HintTile';
 import Map from './components/Map';
 import SearchBar from './components/SearchBar';
 import ShowOptions from './components/ShowOptions';
@@ -15,15 +16,19 @@ class MapView extends React.Component {
 
     this.state = {
       currentFloor: 0,
+      hintPosition: {
+        x: null,
+        y: null,
+      },
     };
   }
 
-  setFloor = floorNumber => {
-    this.setState({ currentFloor: floorNumber });
-  };
+  setFloor = floorNumber => this.setState({ currentFloor: floorNumber });
+
+  setHintPosition = position => this.setState({ hintPosition: position });
 
   render() {
-    const { currentFloor } = this.state;
+    const { currentFloor, hintPosition } = this.state;
 
     return (
       <section className={styles.mapViewSection}>
@@ -35,14 +40,14 @@ class MapView extends React.Component {
         </div>
         <div className={styles.contentWrapper}>
           <div className={styles.mapWrapper}>
-            <Map currentFloor={currentFloor} />
+            <Map currentFloor={currentFloor} setHintPosition={this.setHintPosition} />
           </div>
           <div className={styles.sidebarWrapper}>
             <FloorController setFloor={this.setFloor} currentFloor={currentFloor} />
             <ShowOptions />
           </div>
         </div>
-        {/* <HintTile /> */}
+        <HintTile position={hintPosition} />
       </section>
     );
   }

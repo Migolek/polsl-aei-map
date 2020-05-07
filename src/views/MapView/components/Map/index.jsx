@@ -17,6 +17,7 @@ import * as styles from './styles.module.scss';
 export default class Map extends Component {
   static propTypes = {
     currentFloor: PropTypes.number,
+    setHintPosition: PropTypes.func,
   };
 
   static mapConfig = [
@@ -32,6 +33,26 @@ export default class Map extends Component {
     <Floor9 key="9" />,
   ];
 
+  constructor() {
+    super();
+
+    this.refMap = React.createRef();
+  }
+
+  componentDidMount() {
+    const { current: element } = this.refMap;
+    element.addEventListener('click', this.handleClickMap);
+  }
+
+  componentWillUnmount() {
+    const { current: element } = this.refMap;
+    element.removeEventListener('click', this.handleClickMap);
+  }
+
+  handleClickMap = event => {
+    console.log(event.target);
+  };
+
   renderMap = () => {
     const { currentFloor } = this.props;
 
@@ -41,6 +62,10 @@ export default class Map extends Component {
   };
 
   render() {
-    return <section className={styles.mapSection}>{this.renderMap()}</section>;
+    return (
+      <section ref={this.refMap} className={styles.mapSection}>
+        {this.renderMap()}
+      </section>
+    );
   }
 }

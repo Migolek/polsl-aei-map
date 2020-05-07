@@ -16,6 +16,7 @@
     cursor: pointer;
     background-color: $color_white;
     border: none;
+    outline: none;
 
     &.hidden {
       opacity: 0;
