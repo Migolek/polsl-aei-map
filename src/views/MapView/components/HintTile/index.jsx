@@ -34,7 +34,7 @@ class HintTile extends Component {
 
   render() {
     return (
-      <section className={styles.hintTileSection} style={this.setPosition()}>
+      <section id="map_hint" className={styles.hintTileSection} style={this.setPosition()}>
         <div className={styles.contentWrapper}>
           <span className={styles.name}>{'Buffet'}</span>
           <span className={styles.category}>{'(Inne)'}</span>

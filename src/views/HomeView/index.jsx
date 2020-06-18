@@ -9,7 +9,7 @@ import * as styles from './styles.module.scss';
 class HomeView extends React.Component {
   render() {
     return (
-      <Link to="/map">
+      <Link className={styles.linkWrapper} to="/map">
         <section className={styles.homeViewSection}>
           <div className={styles.contentWrapper}>
             <div className={styles.logoWrapper}>

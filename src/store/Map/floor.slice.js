@@ -10,14 +10,14 @@ const floorSlice = createSlice({
       if (state.currentFloor + 1 > 9) {
         state.currentFloor = 9;
       } else {
-        state.currentFloor + 1;
+        state.currentFloor = state.currentFloor + 1;
       }
     },
     setLowerFloor: state => {
       if (state.currentFloor - 1 < 0) {
         state.currentFloor = 0;
       } else {
-        state.currentFloor - 1;
+        state.currentFloor = state.currentFloor - 1;
       }
     },
   },

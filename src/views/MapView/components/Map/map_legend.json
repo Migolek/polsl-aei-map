@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hall_A",
+    "name": "Aula A",
+    "category": "Inne",
+    "floor": "Parter",
+    "opening_hours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_B",
+    "name": "Aula B",
+    "category": "Inne",
+    "floor": "Parter",
+    "opening_hours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_C",
+    "name": "Aula C",
+    "category": "Inne",
+    "floor": "Parter",
+    "opening_hours": "7:00 - 18:00"
+  }
+]

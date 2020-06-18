@@ -11,19 +11,7 @@ import ShowOptions from './components/ShowOptions';
 import * as styles from './styles.module.scss';
 
 class MapView extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      currentFloor: 0,
-    };
-  }
-
-  setFloor = floorNumber => this.setState({ currentFloor: floorNumber });
-
   render() {
-    const { currentFloor } = this.state;
-
     return (
       <section className={styles.mapViewSection}>
         <div className={styles.headerWrapper}>
@@ -34,10 +22,10 @@ class MapView extends React.Component {
         </div>
         <div className={styles.contentWrapper}>
           <div className={styles.mapWrapper}>
-            <Map currentFloor={currentFloor} />
+            <Map />
           </div>
           <div className={styles.sidebarWrapper}>
-            <FloorController setFloor={this.setFloor} currentFloor={currentFloor} />
+            <FloorController />
             <ShowOptions />
           </div>
         </div>

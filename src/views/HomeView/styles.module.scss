@@ -1,5 +1,9 @@
 @import '../../styles/_variables.scss';
 
+.linkWrapper {
+  text-decoration: none;
+}
+
 .homeViewSection {
   padding: 64px;
   height: 100vh;
