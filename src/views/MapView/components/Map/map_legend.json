@@ -4,20 +4,41 @@
     "name": "Aula A",
     "category": "Inne",
     "floor": "Parter",
-    "opening_hours": "7:00 - 18:00"
+    "openingHours": "7:00 - 18:00"
   },
   {
     "id": "hall_B",
     "name": "Aula B",
     "category": "Inne",
     "floor": "Parter",
-    "opening_hours": "7:00 - 18:00"
+    "openingHours": "7:00 - 18:00"
   },
   {
     "id": "hall_C",
     "name": "Aula C",
     "category": "Inne",
     "floor": "Parter",
-    "opening_hours": "7:00 - 18:00"
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "room_1",
+    "name": "Sala 1",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "room_2",
+    "name": "Sala 2",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "room_3",
+    "name": "Sala 3",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "openingHours": "7:00 - 18:00"
   }
 ]

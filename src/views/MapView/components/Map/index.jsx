@@ -10,6 +10,7 @@ import { ReactComponent as Floor6 } from 'assets/map-files/6_floor.svg';
 import { ReactComponent as Floor7 } from 'assets/map-files/7_floor.svg';
 import { ReactComponent as Floor8 } from 'assets/map-files/8_floor.svg';
 import { ReactComponent as Floor9 } from 'assets/map-files/9_floor.svg';
+import { setDescription } from 'store/Hint/description.slice';
 import { setPosition } from 'store/Hint/position.slice';
 
 import rooms from './map_legend.json';
@@ -23,6 +24,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   setPosition: pos => dispatch(setPosition(pos)),
+  setDescription: desc => dispatch(setDescription(desc)),
 });
 
 class Map extends Component {
@@ -60,14 +62,19 @@ class Map extends Component {
     const closestElementId = closestElement?.id;
     const roomDescription = rooms.find(ele => ele.id === closestElementId);
     if (closestElementId && roomDescription) {
-      this.setHintPosition(closestElementId, roomDescription);
+      this.setHintPosition(closestElementId);
+      this.setHintDescription(roomDescription);
     }
   };
 
-  setHintPosition = (id, description) => {
+  setHintPosition = id => {
     const roomElement = document.getElementById(id);
-
     this.checkSelectedPos(roomElement);
+  };
+
+  setHintDescription = description => {
+    const { setDescription } = this.props;
+    setDescription(description);
   };
 
   checkSelectedPos = roomEle => {

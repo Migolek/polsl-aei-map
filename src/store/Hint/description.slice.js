@@ -3,17 +3,17 @@ import { createSlice } from '@reduxjs/toolkit';
 const descriptionSlice = createSlice({
   name: 'description',
   initialState: {
-    id: null,
-    name: null,
-    category: null,
-    floor: null,
-    opening_hours: null,
+    info: {
+      id: null,
+      name: null,
+      category: null,
+      floor: null,
+      openingHours: null,
+    },
   },
   reducers: {
     setDescription: (state, action) => {
-      state = {
-        ...action.payload,
-      };
+      state.info = { ...action.payload };
     },
   },
 });

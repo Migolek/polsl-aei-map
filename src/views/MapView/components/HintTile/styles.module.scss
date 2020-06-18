@@ -6,6 +6,10 @@
   position: absolute;
   z-index: 999;
 
+  &.hidden {
+    display: none;
+  }
+
   .contentWrapper {
     color: $color_gray;
     background-color: $color_white;
