@@ -3,8 +3,12 @@
   cursor: pointer;
 }
 
-.rooms > g:hover > rect,
-.rooms > g:hover > path {
+.rooms > g:hover > rect {
   fill: #284C8E !important;
   opacity: 0.6;
+}
+
+.rooms > g.active > rect {
+  fill: #284C8E !important;
+  opacity: 1;
 }

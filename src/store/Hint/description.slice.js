@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const descriptionSlice = createSlice({
   name: 'description',
   initialState: {
+    isVisible: false,
     info: {
       id: null,
       name: null,
@@ -14,10 +15,15 @@ const descriptionSlice = createSlice({
   reducers: {
     setDescription: (state, action) => {
       state.info = { ...action.payload };
+      state.isVisible = true;
+    },
+    removeDescription: state => {
+      state.info = {};
+      state.isVisible = false;
     },
   },
 });
 
-export const { setDescription } = descriptionSlice.actions;
+export const { setDescription, removeDescription } = descriptionSlice.actions;
 
 export default descriptionSlice;

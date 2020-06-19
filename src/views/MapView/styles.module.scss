@@ -16,11 +16,10 @@
       width: auto;
     }
 
-    .serachbarWrapper {
+    .searchbarWrapper {
       display: flex;
       align-items: center;
-      justify-content: center;
-      max-width: 250px;
+      justify-content: flex-end;
       width: 100%;
     }
   }

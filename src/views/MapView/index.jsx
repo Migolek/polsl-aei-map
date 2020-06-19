@@ -16,7 +16,7 @@ class MapView extends React.Component {
       <section className={styles.mapViewSection}>
         <div className={styles.headerWrapper}>
           <img src={PolslLogo} alt="polsl-logo" />
-          <div className={styles.serachbarWrapper}>
+          <div className={styles.searchbarWrapper}>
             <SearchBar />
           </div>
         </div>

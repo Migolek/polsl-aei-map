@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
 import * as styles from './styles.module.scss';
 
 const mapStateToProps = state => ({
   position: state.hint.position,
   description: state.hint.description.info,
+  isVisible: state.hint.description.isVisible,
 });
 
 class HintTile extends Component {
@@ -20,12 +20,12 @@ class HintTile extends Component {
   };
 
   render() {
-    const { description } = this.props;
+    const { description, isVisible } = this.props;
 
     return (
       <section
         id="map_hint"
-        className={classNames(styles.hintTileSection, !description.name && styles.hidden)}
+        className={classNames(styles.hintTileSection, !isVisible && styles.hidden)}
         style={this.setPosition()}>
         <div className={styles.contentWrapper}>
           <span className={styles.name}>{description.name}</span>

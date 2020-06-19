@@ -10,7 +10,7 @@ import { ReactComponent as Floor6 } from 'assets/map-files/6_floor.svg';
 import { ReactComponent as Floor7 } from 'assets/map-files/7_floor.svg';
 import { ReactComponent as Floor8 } from 'assets/map-files/8_floor.svg';
 import { ReactComponent as Floor9 } from 'assets/map-files/9_floor.svg';
-import { setDescription } from 'store/Hint/description.slice';
+import { removeDescription, setDescription } from 'store/Hint/description.slice';
 import { setPosition } from 'store/Hint/position.slice';
 
 import rooms from './map_legend.json';
@@ -20,11 +20,13 @@ import * as styles from './styles.module.scss';
 
 const mapStateToProps = state => ({
   currentFloor: state.map.floor.currentFloor,
+  currentRoom: state.hint.description.info.id,
 });
 
 const mapDispatchToProps = dispatch => ({
   setPosition: pos => dispatch(setPosition(pos)),
   setDescription: desc => dispatch(setDescription(desc)),
+  removeDescription: () => dispatch(removeDescription()),
 });
 
 class Map extends Component {
@@ -41,29 +43,28 @@ class Map extends Component {
     <Floor9 key="9" />,
   ];
 
-  constructor() {
-    super();
-
-    this.refMap = React.createRef();
-  }
-
   componentDidMount() {
-    const { current: element } = this.refMap;
-    element.addEventListener('click', this.handleClickMap);
+    document.addEventListener('click', this.handleClickMap);
   }
 
   componentWillUnmount() {
-    const { current: element } = this.refMap;
-    element.removeEventListener('click', this.handleClickMap);
+    document.removeEventListener('click', this.handleClickMap);
   }
 
   handleClickMap = event => {
     const closestElement = event.target.closest('.room_block');
     const closestElementId = closestElement?.id;
     const roomDescription = rooms.find(ele => ele.id === closestElementId);
+    const hintElement = document.getElementById('map_hint');
+    const isClickedHint = hintElement.contains(event.target);
+
     if (closestElementId && roomDescription) {
       this.setHintPosition(closestElementId);
       this.setHintDescription(roomDescription);
+      this.setActiveRoom();
+    } else if (!closestElement && !isClickedHint) {
+      this.props.removeDescription();
+      this.setActiveRoom();
     }
   };
 
@@ -75,6 +76,19 @@ class Map extends Component {
   setHintDescription = description => {
     const { setDescription } = this.props;
     setDescription(description);
+  };
+
+  setActiveRoom = () => {
+    const { currentRoom } = this.props;
+
+    const allRooms = Array.from(document.getElementsByClassName('room_block'));
+    allRooms.map(e => {
+      if (e.id === currentRoom) {
+        e.classList.add('active');
+      } else {
+        e.classList.remove('active');
+      }
+    });
   };
 
   checkSelectedPos = roomEle => {
@@ -107,11 +121,7 @@ class Map extends Component {
   };
 
   render() {
-    return (
-      <section ref={this.refMap} className={styles.mapSection}>
-        {this.renderMap()}
-      </section>
-    );
+    return <section className={styles.mapSection}>{this.renderMap()}</section>;
   }
 }
 

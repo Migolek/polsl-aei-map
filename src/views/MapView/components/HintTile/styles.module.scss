@@ -5,9 +5,10 @@
   max-height: 160px;
   position: absolute;
   z-index: 999;
+  transition: all 0s;
 
   &.hidden {
-    display: none;
+    opacity: 0;
   }
 
   .contentWrapper {
