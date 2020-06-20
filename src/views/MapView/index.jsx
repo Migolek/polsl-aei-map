@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import PolslLogo from '../../assets/polsl-logo.png';
 
@@ -15,7 +16,9 @@ class MapView extends React.Component {
     return (
       <section className={styles.mapViewSection}>
         <div className={styles.headerWrapper}>
-          <img src={PolslLogo} alt="polsl-logo" />
+          <Link className={styles.linkWrapper} to="/">
+            <img src={PolslLogo} alt="polsl-logo" />
+          </Link>
           <div className={styles.searchbarWrapper}>
             <SearchBar />
           </div>
