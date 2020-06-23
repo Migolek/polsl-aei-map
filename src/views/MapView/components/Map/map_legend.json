@@ -4,6 +4,7 @@
     "name": "Aula A",
     "category": "Inne",
     "floor": "Parter",
+    "floor_id": "floor_0",
     "openingHours": "7:00 - 18:00"
   },
   {
@@ -11,6 +12,7 @@
     "name": "Aula B",
     "category": "Inne",
     "floor": "Parter",
+    "floor_id": "floor_0",
     "openingHours": "7:00 - 18:00"
   },
   {
@@ -18,27 +20,2183 @@
     "name": "Aula C",
     "category": "Inne",
     "floor": "Parter",
+    "floor_id": "floor_0",
     "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_A",
+    "name": "Aula A",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_B",
+    "name": "Aula B",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_C",
+    "name": "Aula C",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_D",
+    "name": "Aula D",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_E",
+    "name": "Aula E",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "hall_F",
+    "name": "Aula F",
+    "category": "Inne",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "Rezerwacje"
+  },
+  {
+    "id": "buffet_2",
+    "name": "Buffet",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:00 - 15:00"
   },
   {
     "id": "room_1",
     "name": "Sala 1",
     "category": "Pokoje",
     "floor": "Parter",
-    "openingHours": "7:00 - 18:00"
+    "floor_id": "floor_0",
+    "openingHours": "7:00 - 20:00"
   },
   {
     "id": "room_2",
     "name": "Sala 2",
     "category": "Pokoje",
     "floor": "Parter",
-    "openingHours": "7:00 - 18:00"
+    "floor_id": "floor_0",
+    "openingHours": "7:00 - 17:00"
   },
   {
     "id": "room_3",
     "name": "Sala 3",
     "category": "Pokoje",
     "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "7:00 - 15:30"
+  },
+  {
+    "id": "room_4",
+    "name": "Sala 4",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "9:10 - 15:30"
+  },
+  {
+    "id": "room_5",
+    "name": "Sala 5",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "7:20 - 15:40"
+  },
+  {
+    "id": "room_6",
+    "name": "Sala 6",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "10:10 - 17:50"
+  },
+  {
+    "id": "room_7",
+    "name": "Sala 7",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "10:00 - 17:50"
+  },
+  {
+    "id": "room_8",
+    "name": "Sala 8",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "7:40 - 15:10"
+  },
+  {
+    "id": "room_9",
+    "name": "Sala 9",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:40 - 18:10"
+  },
+  {
+    "id": "room_10",
+    "name": "Sala 10",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "9:30 - 15:00"
+  },
+  {
+    "id": "room_11",
+    "name": "Sala 11",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:10 - 19:40"
+  },
+  {
+    "id": "room_12",
+    "name": "Sala 12",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:00 - 19:20"
+  },
+  {
+    "id": "room_13",
+    "name": "Sala 13",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "10:10 - 19:10"
+  },
+  {
+    "id": "room_14",
+    "name": "Sala 14",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "7:10 - 18:50"
+  },
+  {
+    "id": "room_15",
+    "name": "Sala 15",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:20 - 16:00"
+  },
+  {
+    "id": "room_16",
+    "name": "Sala 16",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:50 - 20:00"
+  },
+  {
+    "id": "room_17",
+    "name": "Sala 17",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "7:00 - 16:00"
+  },
+  {
+    "id": "room_18",
+    "name": "Sala 18",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "9:50 - 18:00"
+  },
+  {
+    "id": "room_19",
+    "name": "Sala 19",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "9:30 - 20:10"
+  },
+  {
+    "id": "room_20",
+    "name": "Sala 20",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:40 - 20:30"
+  },
+  {
+    "id": "room_21",
+    "name": "Sala 21",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "10:30 - 15:40"
+  },
+  {
+    "id": "room_22",
+    "name": "Sala 22",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "7:10 - 16:30"
+  },
+  {
+    "id": "room_23",
+    "name": "Sala 23",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "10:40 - 16:50"
+  },
+  {
+    "id": "room_24",
+    "name": "Sala 24",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "9:30 - 15:00"
+  },
+  {
+    "id": "room_25",
+    "name": "Sala 25",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:50 - 19:30"
+  },
+  {
+    "id": "room_26",
+    "name": "Sala 26",
+    "category": "Pokoje",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "10:50 - 17:30"
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": ""
+  },
+  {
+    "id": "cloakroom",
+    "name": "Szatnia",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:00 - 15:00"
+  },
+  {
+    "id": "printing_house",
+    "name": "Drukarnia",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:00 - 17:00"
+  },
+  {
+    "id": "newsstand",
+    "name": "Kiosk",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "8:00 - 16:00"
+  },
+  {
+    "id": "buffet",
+    "name": "Bufet",
+    "category": "Inne",
+    "floor": "Parter",
+    "floor_id": "floor_0",
+    "openingHours": "7:00 - 16:00"
+  },
+  {
+    "id": "room_101",
+    "name": "Sala 101",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:20 - 18:40"
+  },
+  {
+    "id": "room_102",
+    "name": "Sala 102",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:50 - 18:50"
+  },
+  {
+    "id": "room_103",
+    "name": "Sala 103",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "9:00 - 20:40"
+  },
+  {
+    "id": "room_104",
+    "name": "Sala 104",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "9:50 - 16:00"
+  },
+  {
+    "id": "room_105",
+    "name": "Sala 105",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "8:10 - 20:10"
+  },
+  {
+    "id": "room_106",
+    "name": "Sala 106",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "7:00 - 19:30"
+  },
+  {
+    "id": "room_107",
+    "name": "Sala 107",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "8:10 - 19:50"
+  },
+  {
+    "id": "room_108",
+    "name": "Sala 108",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "9:50 - 16:00"
+  },
+  {
+    "id": "room_109",
+    "name": "Sala 109",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "10:30 - 20:00"
+  },
+  {
+    "id": "room_110",
+    "name": "Sala 110",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "9:50 - 18:10"
+  },
+  {
+    "id": "room_111",
+    "name": "Sala 111",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "8:20 - 17:30"
+  },
+  {
+    "id": "room_112",
+    "name": "Sala 112",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "9:30 - 19:30"
+  },
+  {
+    "id": "room_113",
+    "name": "Sala 113",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "10:20 - 20:50"
+  },
+  {
+    "id": "room_114",
+    "name": "Sala 114",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "8:40 - 19:40"
+  },
+  {
+    "id": "room_115",
+    "name": "Sala 115",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "8:30 - 20:50"
+  },
+  {
+    "id": "room_116",
+    "name": "Sala 116",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "9:00 - 17:00"
+  },
+  {
+    "id": "room_117",
+    "name": "Sala 117",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "8:00 - 17:10"
+  },
+  {
+    "id": "room_118",
+    "name": "Sala 118",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "8:00 - 15:30"
+  },
+  {
+    "id": "room_119",
+    "name": "Sala 119",
+    "category": "Pokoje",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": "10:20 - 18:20"
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 1",
+    "floor_id": "floor_1",
+    "openingHours": ""
+  },
+  {
+    "id": "room_201",
+    "name": "Sala 201",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "7:00 - 15:50"
+  },
+  {
+    "id": "room_202",
+    "name": "Sala 202",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "8:40 - 17:40"
+  },
+  {
+    "id": "room_203",
+    "name": "Sala 203",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "9:20 - 18:10"
+  },
+  {
+    "id": "room_204",
+    "name": "Sala 204",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "7:20 - 16:40"
+  },
+  {
+    "id": "room_205",
+    "name": "Sala 205",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "9:40 - 20:50"
+  },
+  {
+    "id": "room_206",
+    "name": "Sala 206",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:10 - 16:50"
+  },
+  {
+    "id": "room_207",
+    "name": "Sala 207",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "8:40 - 18:10"
+  },
+  {
+    "id": "room_208",
+    "name": "Sala 208",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "9:20 - 20:40"
+  },
+  {
+    "id": "room_209",
+    "name": "Sala 209",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:50 - 18:20"
+  },
+  {
+    "id": "room_210",
+    "name": "Sala 210",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:20 - 20:40"
+  },
+  {
+    "id": "room_211",
+    "name": "Sala 211",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "9:10 - 17:20"
+  },
+  {
+    "id": "room_212",
+    "name": "Sala 212",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "8:40 - 20:20"
+  },
+  {
+    "id": "room_213",
+    "name": "Sala 213",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:30 - 16:00"
+  },
+  {
+    "id": "room_214",
+    "name": "Sala 214",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:30 - 17:30"
+  },
+  {
+    "id": "room_215",
+    "name": "Sala 215",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "7:20 - 15:40"
+  },
+  {
+    "id": "room_216",
+    "name": "Sala 216",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "8:00 - 20:40"
+  },
+  {
+    "id": "room_217",
+    "name": "Sala 217",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "9:50 - 17:30"
+  },
+  {
+    "id": "room_218",
+    "name": "Sala 218",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "8:50 - 20:30"
+  },
+  {
+    "id": "room_219",
+    "name": "Sala 219",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:00 - 18:40"
+  },
+  {
+    "id": "room_220",
+    "name": "Sala 220",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:20 - 16:10"
+  },
+  {
+    "id": "room_221",
+    "name": "Sala 221",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "9:20 - 18:00"
+  },
+  {
+    "id": "room_222",
+    "name": "Sala 222",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "8:20 - 17:00"
+  },
+  {
+    "id": "room_223",
+    "name": "Sala 223",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "9:30 - 15:00"
+  },
+  {
+    "id": "room_224",
+    "name": "Sala 224",
+    "category": "Pokoje",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": "10:10 - 17:30"
+  },
+  {
+    "id": "room_301",
+    "name": "Sala 301",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "9:50 - 15:10"
+  },
+  {
+    "id": "room_302",
+    "name": "Sala 302",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:30 - 20:20"
+  },
+  {
+    "id": "room_303",
+    "name": "Sala 303",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:00 - 15:10"
+  },
+  {
+    "id": "room_304",
+    "name": "Sala 304",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:40 - 15:10"
+  },
+  {
+    "id": "room_305",
+    "name": "Sala 305",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:50 - 19:00"
+  },
+  {
+    "id": "room_306",
+    "name": "Sala 306",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:00 - 20:00"
+  },
+  {
+    "id": "room_307",
+    "name": "Sala 307",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "7:50 - 20:00"
+  },
+  {
+    "id": "room_308",
+    "name": "Sala 308",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "7:20 - 20:10"
+  },
+  {
+    "id": "room_309",
+    "name": "Sala 309",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:50 - 20:50"
+  },
+  {
+    "id": "room_310",
+    "name": "Sala 310",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:20 - 17:40"
+  },
+  {
+    "id": "room_311",
+    "name": "Sala 311",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "7:30 - 15:20"
+  },
+  {
+    "id": "room_312",
+    "name": "Sala 312",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "7:20 - 15:50"
+  },
+  {
+    "id": "room_313",
+    "name": "Sala 313",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "9:20 - 20:20"
+  },
+  {
+    "id": "room_314",
+    "name": "Sala 314",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:10 - 16:40"
+  },
+  {
+    "id": "room_315",
+    "name": "Sala 315",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:50 - 16:50"
+  },
+  {
+    "id": "room_316",
+    "name": "Sala 316",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:40 - 17:40"
+  },
+  {
+    "id": "room_317",
+    "name": "Sala 317",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "9:20 - 16:10"
+  },
+  {
+    "id": "room_318",
+    "name": "Sala 318",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:20 - 19:30"
+  },
+  {
+    "id": "room_319",
+    "name": "Sala 319",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "7:20 - 19:50"
+  },
+  {
+    "id": "room_320",
+    "name": "Sala 320",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:20 - 20:10"
+  },
+  {
+    "id": "room_321",
+    "name": "Sala 321",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "9:20 - 17:50"
+  },
+  {
+    "id": "room_322",
+    "name": "Sala 322",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:30 - 19:50"
+  },
+  {
+    "id": "room_323",
+    "name": "Sala 323",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:10 - 18:30"
+  },
+  {
+    "id": "room_324",
+    "name": "Sala 324",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:30 - 18:50"
+  },
+  {
+    "id": "room_325",
+    "name": "Sala 325",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "10:00 - 15:10"
+  },
+  {
+    "id": "room_326",
+    "name": "Sala 326",
+    "category": "Pokoje",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": "8:30 - 17:20"
+  },
+  {
+    "id": "room_401",
+    "name": "Sala 401",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "7:00 - 15:00"
+  },
+  {
+    "id": "room_402",
+    "name": "Sala 402",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "7:00 - 17:50"
+  },
+  {
+    "id": "room_403",
+    "name": "Sala 403",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:30 - 20:40"
+  },
+  {
+    "id": "room_404",
+    "name": "Sala 404",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:10 - 15:20"
+  },
+  {
+    "id": "room_405",
+    "name": "Sala 405",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "10:50 - 20:30"
+  },
+  {
+    "id": "room_406",
+    "name": "Sala 406",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:50 - 16:20"
+  },
+  {
+    "id": "room_407",
+    "name": "Sala 407",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:10 - 16:00"
+  },
+  {
+    "id": "room_408",
+    "name": "Sala 408",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "8:30 - 15:00"
+  },
+  {
+    "id": "room_409",
+    "name": "Sala 409",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "7:50 - 20:50"
+  },
+  {
+    "id": "room_410",
+    "name": "Sala 410",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "7:20 - 19:10"
+  },
+  {
+    "id": "room_411",
+    "name": "Sala 411",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "10:40 - 20:10"
+  },
+  {
+    "id": "room_412",
+    "name": "Sala 412",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:30 - 15:00"
+  },
+  {
+    "id": "room_413",
+    "name": "Sala 413",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:10 - 20:00"
+  },
+  {
+    "id": "room_414",
+    "name": "Sala 414",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:40 - 17:40"
+  },
+  {
+    "id": "room_415",
+    "name": "Sala 415",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:40 - 15:50"
+  },
+  {
+    "id": "room_416",
+    "name": "Sala 416",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "10:20 - 16:00"
+  },
+  {
+    "id": "room_417",
+    "name": "Sala 417",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "8:40 - 18:20"
+  },
+  {
+    "id": "room_418",
+    "name": "Sala 418",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "7:30 - 16:30"
+  },
+  {
+    "id": "room_419",
+    "name": "Sala 419",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "10:50 - 19:40"
+  },
+  {
+    "id": "room_420",
+    "name": "Sala 420",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:40 - 17:00"
+  },
+  {
+    "id": "room_421",
+    "name": "Sala 421",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:50 - 19:00"
+  },
+  {
+    "id": "room_422",
+    "name": "Sala 422",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "8:40 - 18:30"
+  },
+  {
+    "id": "room_423",
+    "name": "Sala 423",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "10:00 - 19:40"
+  },
+  {
+    "id": "room_424",
+    "name": "Sala 424",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "9:40 - 20:40"
+  },
+  {
+    "id": "room_425",
+    "name": "Sala 425",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "10:40 - 15:20"
+  },
+  {
+    "id": "room_426",
+    "name": "Sala 426",
+    "category": "Pokoje",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": "7:40 - 20:20"
+  },
+  {
+    "id": "room_501",
+    "name": "Sala 501",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "8:50 - 17:20"
+  },
+  {
+    "id": "room_502",
+    "name": "Sala 502",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "8:00 - 19:10"
+  },
+  {
+    "id": "room_503",
+    "name": "Sala 503",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "9:20 - 19:40"
+  },
+  {
+    "id": "room_504",
+    "name": "Sala 504",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:20 - 17:10"
+  },
+  {
+    "id": "room_505",
+    "name": "Sala 505",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "9:20 - 16:10"
+  },
+  {
+    "id": "room_506",
+    "name": "Sala 506",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:30 - 15:00"
+  },
+  {
+    "id": "room_507",
+    "name": "Sala 507",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "10:20 - 15:40"
+  },
+  {
+    "id": "room_508",
+    "name": "Sala 508",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:00 - 15:30"
+  },
+  {
+    "id": "room_509",
+    "name": "Sala 509",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "10:10 - 17:20"
+  },
+  {
+    "id": "room_510",
+    "name": "Sala 510",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "10:50 - 20:20"
+  },
+  {
+    "id": "room_511",
+    "name": "Sala 511",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:10 - 17:40"
+  },
+  {
+    "id": "room_512",
+    "name": "Sala 512",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "9:50 - 18:30"
+  },
+  {
+    "id": "room_513",
+    "name": "Sala 513",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "8:30 - 20:10"
+  },
+  {
+    "id": "room_514",
+    "name": "Sala 514",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "8:00 - 17:10"
+  },
+  {
+    "id": "room_515",
+    "name": "Sala 515",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "8:40 - 16:20"
+  },
+  {
+    "id": "room_516",
+    "name": "Sala 516",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "9:10 - 16:30"
+  },
+  {
+    "id": "room_517",
+    "name": "Sala 517",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:00 - 16:20"
+  },
+  {
+    "id": "room_518",
+    "name": "Sala 518",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "10:30 - 15:40"
+  },
+  {
+    "id": "room_519",
+    "name": "Sala 519",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:00 - 20:40"
+  },
+  {
+    "id": "room_520",
+    "name": "Sala 520",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "8:40 - 17:50"
+  },
+  {
+    "id": "room_521",
+    "name": "Sala 521",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
     "openingHours": "7:00 - 18:00"
+  },
+  {
+    "id": "room_522",
+    "name": "Sala 522",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "9:50 - 19:00"
+  },
+  {
+    "id": "room_523",
+    "name": "Sala 523",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "8:00 - 20:20"
+  },
+  {
+    "id": "room_524",
+    "name": "Sala 524",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:20 - 16:00"
+  },
+  {
+    "id": "room_525",
+    "name": "Sala 525",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:40 - 18:00"
+  },
+  {
+    "id": "room_526",
+    "name": "Sala 526",
+    "category": "Pokoje",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": "7:50 - 19:20"
+  },
+  {
+    "id": "room_601",
+    "name": "Sala 601",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "10:10 - 17:40"
+  },
+  {
+    "id": "room_602",
+    "name": "Sala 602",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:40 - 16:50"
+  },
+  {
+    "id": "room_603",
+    "name": "Sala 603",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "8:40 - 15:30"
+  },
+  {
+    "id": "room_604",
+    "name": "Sala 604",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:10 - 19:50"
+  },
+  {
+    "id": "room_605",
+    "name": "Sala 605",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:40 - 17:10"
+  },
+  {
+    "id": "room_606",
+    "name": "Sala 606",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:30 - 15:20"
+  },
+  {
+    "id": "room_607",
+    "name": "Sala 607",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "8:20 - 18:00"
+  },
+  {
+    "id": "room_608",
+    "name": "Sala 608",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "9:40 - 18:20"
+  },
+  {
+    "id": "room_609",
+    "name": "Sala 609",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "8:40 - 18:00"
+  },
+  {
+    "id": "room_610",
+    "name": "Sala 610",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "9:40 - 20:00"
+  },
+  {
+    "id": "room_611",
+    "name": "Sala 611",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "9:30 - 19:40"
+  },
+  {
+    "id": "room_612",
+    "name": "Sala 612",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:50 - 15:00"
+  },
+  {
+    "id": "room_613",
+    "name": "Sala 613",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "8:40 - 19:40"
+  },
+  {
+    "id": "room_614",
+    "name": "Sala 614",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:30 - 15:20"
+  },
+  {
+    "id": "room_615",
+    "name": "Sala 615",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "10:30 - 15:00"
+  },
+  {
+    "id": "room_616",
+    "name": "Sala 616",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "10:40 - 20:40"
+  },
+  {
+    "id": "room_617",
+    "name": "Sala 617",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:30 - 15:50"
+  },
+  {
+    "id": "room_618",
+    "name": "Sala 618",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "9:20 - 16:00"
+  },
+  {
+    "id": "room_619",
+    "name": "Sala 619",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "8:20 - 16:40"
+  },
+  {
+    "id": "room_620",
+    "name": "Sala 620",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "10:30 - 16:10"
+  },
+  {
+    "id": "room_621",
+    "name": "Sala 621",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "10:50 - 17:30"
+  },
+  {
+    "id": "room_622",
+    "name": "Sala 622",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "8:50 - 17:10"
+  },
+  {
+    "id": "room_623",
+    "name": "Sala 623",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:40 - 20:10"
+  },
+  {
+    "id": "room_624",
+    "name": "Sala 624",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "10:50 - 15:00"
+  },
+  {
+    "id": "room_625",
+    "name": "Sala 625",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "7:00 - 16:40"
+  },
+  {
+    "id": "room_626",
+    "name": "Sala 626",
+    "category": "Pokoje",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": "8:30 - 20:20"
+  },
+  {
+    "id": "room_701",
+    "name": "Sala 701",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "7:00 - 17:20"
+  },
+  {
+    "id": "room_702",
+    "name": "Sala 702",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "9:10 - 15:00"
+  },
+  {
+    "id": "room_703",
+    "name": "Sala 703",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "7:20 - 20:10"
+  },
+  {
+    "id": "room_704",
+    "name": "Sala 704",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:20 - 15:50"
+  },
+  {
+    "id": "room_705",
+    "name": "Sala 705",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:10 - 15:30"
+  },
+  {
+    "id": "room_706",
+    "name": "Sala 706",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "7:30 - 17:40"
+  },
+  {
+    "id": "room_707",
+    "name": "Sala 707",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:30 - 16:40"
+  },
+  {
+    "id": "room_708",
+    "name": "Sala 708",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "9:20 - 15:50"
+  },
+  {
+    "id": "room_709",
+    "name": "Sala 709",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:00 - 18:00"
+  },
+  {
+    "id": "room_710",
+    "name": "Sala 710",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:00 - 20:50"
+  },
+  {
+    "id": "room_711",
+    "name": "Sala 711",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:40 - 17:30"
+  },
+  {
+    "id": "room_712",
+    "name": "Sala 712",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:10 - 15:40"
+  },
+  {
+    "id": "room_713",
+    "name": "Sala 713",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "8:20 - 16:00"
+  },
+  {
+    "id": "room_714",
+    "name": "Sala 714",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "9:40 - 17:20"
+  },
+  {
+    "id": "room_715",
+    "name": "Sala 715",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "8:50 - 16:10"
+  },
+  {
+    "id": "room_716",
+    "name": "Sala 716",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "8:30 - 20:50"
+  },
+  {
+    "id": "room_717",
+    "name": "Sala 717",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "7:10 - 15:20"
+  },
+  {
+    "id": "room_718",
+    "name": "Sala 718",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "8:30 - 16:10"
+  },
+  {
+    "id": "room_719",
+    "name": "Sala 719",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "9:30 - 19:00"
+  },
+  {
+    "id": "room_720",
+    "name": "Sala 720",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "8:10 - 19:10"
+  },
+  {
+    "id": "room_721",
+    "name": "Sala 721",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "8:40 - 18:40"
+  },
+  {
+    "id": "room_722",
+    "name": "Sala 722",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "7:10 - 18:20"
+  },
+  {
+    "id": "room_723",
+    "name": "Sala 723",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "7:20 - 20:00"
+  },
+  {
+    "id": "room_724",
+    "name": "Sala 724",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "10:30 - 17:20"
+  },
+  {
+    "id": "room_725",
+    "name": "Sala 725",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "8:10 - 20:30"
+  },
+  {
+    "id": "room_726",
+    "name": "Sala 726",
+    "category": "Pokoje",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": "9:00 - 15:20"
+  },
+  {
+    "id": "room_801",
+    "name": "Sala 801",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "8:10 - 17:40"
+  },
+  {
+    "id": "room_802",
+    "name": "Sala 802",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:10 - 17:20"
+  },
+  {
+    "id": "room_803",
+    "name": "Sala 803",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:30 - 15:30"
+  },
+  {
+    "id": "room_804",
+    "name": "Sala 804",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "8:30 - 16:10"
+  },
+  {
+    "id": "room_805",
+    "name": "Sala 805",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "9:20 - 20:10"
+  },
+  {
+    "id": "room_806",
+    "name": "Sala 806",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:00 - 18:40"
+  },
+  {
+    "id": "room_807",
+    "name": "Sala 807",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "9:40 - 18:00"
+  },
+  {
+    "id": "room_808",
+    "name": "Sala 808",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "9:40 - 20:30"
+  },
+  {
+    "id": "room_809",
+    "name": "Sala 809",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:10 - 17:40"
+  },
+  {
+    "id": "room_810",
+    "name": "Sala 810",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:10 - 18:40"
+  },
+  {
+    "id": "room_811",
+    "name": "Sala 811",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "8:30 - 20:30"
+  },
+  {
+    "id": "room_812",
+    "name": "Sala 812",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:10 - 19:40"
+  },
+  {
+    "id": "room_813",
+    "name": "Sala 813",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:40 - 16:50"
+  },
+  {
+    "id": "room_814",
+    "name": "Sala 814",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "9:40 - 19:20"
+  },
+  {
+    "id": "room_815",
+    "name": "Sala 815",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:50 - 15:10"
+  },
+  {
+    "id": "room_816",
+    "name": "Sala 816",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "8:00 - 19:50"
+  },
+  {
+    "id": "room_817",
+    "name": "Sala 817",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:30 - 15:10"
+  },
+  {
+    "id": "room_818",
+    "name": "Sala 818",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:10 - 17:20"
+  },
+  {
+    "id": "room_819",
+    "name": "Sala 819",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:30 - 19:20"
+  },
+  {
+    "id": "room_820",
+    "name": "Sala 820",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "8:10 - 16:20"
+  },
+  {
+    "id": "room_821",
+    "name": "Sala 821",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:50 - 20:20"
+  },
+  {
+    "id": "room_822",
+    "name": "Sala 822",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "10:50 - 17:20"
+  },
+  {
+    "id": "room_823",
+    "name": "Sala 823",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:40 - 20:00"
+  },
+  {
+    "id": "room_824",
+    "name": "Sala 824",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:20 - 17:40"
+  },
+  {
+    "id": "room_825",
+    "name": "Sala 825",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "7:40 - 18:50"
+  },
+  {
+    "id": "room_826",
+    "name": "Sala 826",
+    "category": "Pokoje",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": "8:00 - 20:30"
+  },
+  {
+    "id": "room_901",
+    "name": "Sala 901",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:10 - 16:40"
+  },
+  {
+    "id": "room_902",
+    "name": "Sala 902",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "8:50 - 19:40"
+  },
+  {
+    "id": "room_903",
+    "name": "Sala 903",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "9:50 - 18:10"
+  },
+  {
+    "id": "room_904",
+    "name": "Sala 904",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "7:00 - 19:40"
+  },
+  {
+    "id": "room_905",
+    "name": "Sala 905",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "7:20 - 15:20"
+  },
+  {
+    "id": "room_906",
+    "name": "Sala 906",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "7:10 - 19:00"
+  },
+  {
+    "id": "room_907",
+    "name": "Sala 907",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "9:40 - 17:10"
+  },
+  {
+    "id": "room_908",
+    "name": "Sala 908",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "7:50 - 19:00"
+  },
+  {
+    "id": "room_909",
+    "name": "Sala 909",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "9:20 - 17:30"
+  },
+  {
+    "id": "room_910",
+    "name": "Sala 910",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:50 - 17:50"
+  },
+  {
+    "id": "room_911",
+    "name": "Sala 911",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "9:40 - 19:40"
+  },
+  {
+    "id": "room_912",
+    "name": "Sala 912",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:50 - 16:30"
+  },
+  {
+    "id": "room_913",
+    "name": "Sala 913",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "8:30 - 16:20"
+  },
+  {
+    "id": "room_914",
+    "name": "Sala 914",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "8:50 - 19:30"
+  },
+  {
+    "id": "room_915",
+    "name": "Sala 915",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:10 - 20:00"
+  },
+  {
+    "id": "room_916",
+    "name": "Sala 916",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "9:00 - 15:30"
+  },
+  {
+    "id": "room_917",
+    "name": "Sala 917",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:40 - 20:30"
+  },
+  {
+    "id": "room_918",
+    "name": "Sala 918",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:30 - 19:20"
+  },
+  {
+    "id": "room_919",
+    "name": "Sala 919",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "7:00 - 15:30"
+  },
+  {
+    "id": "room_920",
+    "name": "Sala 920",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "7:20 - 16:40"
+  },
+  {
+    "id": "room_921",
+    "name": "Sala 921",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "9:30 - 20:50"
+  },
+  {
+    "id": "room_922",
+    "name": "Sala 922",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:30 - 19:30"
+  },
+  {
+    "id": "room_923",
+    "name": "Sala 923",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "10:20 - 16:00"
+  },
+  {
+    "id": "room_924",
+    "name": "Sala 924",
+    "category": "Pokoje",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": "9:50 - 18:10"
   }
 ]

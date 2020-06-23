@@ -3,12 +3,21 @@
   cursor: pointer;
 }
 
-.rooms > g:hover > rect {
+.room_block:hover > rect,
+.room_block:hover > path {
   fill: #284C8E !important;
   opacity: 0.6;
+  cursor: pointer;
 }
 
-.rooms > g.active > rect {
+.room_block.active > rect,
+.room_block.active > path {
   fill: #284C8E !important;
   opacity: 1;
+}
+
+.room_block.active text,
+.room_block:hover text {
+  fill: #fff !important;
+  cursor: pointer;
 }

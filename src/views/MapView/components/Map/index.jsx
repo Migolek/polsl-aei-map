@@ -54,7 +54,8 @@ class Map extends Component {
   handleClickMap = event => {
     const closestElement = event.target.closest('.room_block');
     const closestElementId = closestElement?.id;
-    const roomDescription = rooms.find(ele => ele.id === closestElementId);
+    const { currentFloor } = this.props;
+    const roomDescription = rooms.find(ele => ele.id === closestElementId && ele.floor_id === `floor_${currentFloor}`);
     const hintElement = document.getElementById('map_hint');
     const isClickedHint = hintElement.contains(event.target);
 
@@ -115,13 +116,17 @@ class Map extends Component {
   renderMap = () => {
     const { currentFloor } = this.props;
 
-    if (currentFloor >= 0 && currentFloor < 9) {
+    if (currentFloor >= 0 && currentFloor <= 9) {
       return Map.mapConfig[currentFloor];
     } else return Map.mapConfig[0];
   };
 
   render() {
-    return <section className={styles.mapSection}>{this.renderMap()}</section>;
+    return (
+      <section id="map_wrapper" className={styles.mapSection}>
+        {this.renderMap()}
+      </section>
+    );
   }
 }
 
