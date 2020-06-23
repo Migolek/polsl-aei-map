@@ -563,8 +563,232 @@
     "id": "women_wc_1",
     "name": "Toaleta damska",
     "category": "Inne",
-    "floor": "Piętro 1",
-    "floor_id": "floor_1",
+    "floor": "Piętro 2",
+    "floor_id": "floor_2",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 3",
+    "floor_id": "floor_3",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 4",
+    "floor_id": "floor_4",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 5",
+    "floor_id": "floor_5",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 6",
+    "floor_id": "floor_6",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 7",
+    "floor_id": "floor_7",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 8",
+    "floor_id": "floor_8",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_0",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": ""
+  },
+  {
+    "id": "men_wc_1",
+    "name": "Toaleta męska",
+    "category": "Inne",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_0",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
+    "openingHours": ""
+  },
+  {
+    "id": "women_wc_1",
+    "name": "Toaleta damska",
+    "category": "Inne",
+    "floor": "Piętro 9",
+    "floor_id": "floor_9",
     "openingHours": ""
   },
   {
