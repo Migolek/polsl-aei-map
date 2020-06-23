@@ -21,3 +21,7 @@
   fill: #fff !important;
   cursor: pointer;
 }
+
+.room_block.hidden {
+  display: none;
+}

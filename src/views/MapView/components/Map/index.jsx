@@ -21,6 +21,7 @@ import * as styles from './styles.module.scss';
 const mapStateToProps = state => ({
   currentFloor: state.map.floor.currentFloor,
   currentRoom: state.hint.description.info.id,
+  selectedOptions: state.map.options.selectedOptions,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -49,6 +50,12 @@ class Map extends Component {
 
   componentWillUnmount() {
     document.removeEventListener('click', this.handleClickMap);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedOptions !== this.props.selectedOptions) {
+      this.checkSelectedOptions();
+    }
   }
 
   handleClickMap = event => {
@@ -88,6 +95,19 @@ class Map extends Component {
         e.classList.add('active');
       } else {
         e.classList.remove('active');
+      }
+    });
+  };
+
+  checkSelectedOptions = () => {
+    const { selectedOptions } = this.props;
+
+    rooms.map(ele => {
+      const eleDOM = document.getElementById(ele.id);
+      if (!selectedOptions.includes(ele.category)) {
+        eleDOM && eleDOM.classList.add('hidden');
+      } else {
+        eleDOM && eleDOM.classList.remove('hidden');
       }
     });
   };

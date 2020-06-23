@@ -2,7 +2,7 @@
   {
     "id": "hall_A",
     "name": "Aula A",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Parter",
     "floor_id": "floor_0",
     "openingHours": "7:00 - 18:00"
@@ -10,7 +10,7 @@
   {
     "id": "hall_B",
     "name": "Aula B",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Parter",
     "floor_id": "floor_0",
     "openingHours": "7:00 - 18:00"
@@ -18,7 +18,7 @@
   {
     "id": "hall_C",
     "name": "Aula C",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Parter",
     "floor_id": "floor_0",
     "openingHours": "7:00 - 18:00"
@@ -26,7 +26,7 @@
   {
     "id": "hall_A",
     "name": "Aula A",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Piętro 1",
     "floor_id": "floor_1",
     "openingHours": "7:00 - 18:00"
@@ -34,7 +34,7 @@
   {
     "id": "hall_B",
     "name": "Aula B",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Piętro 1",
     "floor_id": "floor_1",
     "openingHours": "7:00 - 18:00"
@@ -42,7 +42,7 @@
   {
     "id": "hall_C",
     "name": "Aula C",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Piętro 1",
     "floor_id": "floor_1",
     "openingHours": "7:00 - 18:00"
@@ -50,7 +50,7 @@
   {
     "id": "hall_D",
     "name": "Aula D",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Piętro 1",
     "floor_id": "floor_1",
     "openingHours": "7:00 - 18:00"
@@ -58,7 +58,7 @@
   {
     "id": "hall_E",
     "name": "Aula E",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Piętro 1",
     "floor_id": "floor_1",
     "openingHours": "7:00 - 18:00"
@@ -66,7 +66,7 @@
   {
     "id": "hall_F",
     "name": "Aula F",
-    "category": "Inne",
+    "category": "Aule",
     "floor": "Piętro 2",
     "floor_id": "floor_2",
     "openingHours": "Rezerwacje"
