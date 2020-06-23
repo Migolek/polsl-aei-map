@@ -1,0 +1,15 @@
+.react-simple-keyboard {
+  max-width: 1000px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.hg-theme-default .hg-row,
+.hg-theme-default .hg-row:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.hg-theme-default .hg-row .hg-button-container,
+.hg-theme-default .hg-row .hg-button:not(:last-child) {
+  margin-right: 16px;
+}
