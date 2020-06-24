@@ -1,16 +1,32 @@
 import React, { Component } from 'react';
 import Autosuggest from 'react-autosuggest';
+import { connect } from 'react-redux';
 import Keyboard from 'react-simple-keyboard';
 import { ReactComponent as Search } from 'assets/search-solid.svg';
 import classNames from 'classnames';
+import { setDescription } from 'store/Hint/description.slice';
+import { setPosition } from 'store/Hint/position.slice';
+import { setFloor } from 'store/Map/floor.slice';
 
+import { checkSelectedPos } from '../../helpers';
 import mapLegend from '../Map/map_legend.json';
 
 import 'react-simple-keyboard/build/css/index.css';
+import './autosuggest.css';
 import './keyboard.css';
 import * as styles from './styles.module.scss';
 
-export default class SearchBar extends Component {
+const mapStateToProps = state => ({
+  currentFloor: state.map.floor.currentFloor,
+});
+
+const mapDispatchToProps = dispatch => ({
+  setPosition: pos => dispatch(setPosition(pos)),
+  setDescription: desc => dispatch(setDescription(desc)),
+  setFloor: floor => dispatch(setFloor(floor)),
+});
+
+class SearchBar extends Component {
   constructor() {
     super();
 
@@ -55,7 +71,7 @@ export default class SearchBar extends Component {
     this.setState({ searchValue: value, suggestions: this.getSuggestions(value) });
   };
 
-  onChange = (event, { newValue, method }) => {
+  onChange = (event, { newValue }) => {
     this.setState({
       searchValue: newValue,
     });
@@ -64,7 +80,8 @@ export default class SearchBar extends Component {
 
   handleOnFocus = () => {
     document.addEventListener('click', this.clickedOutside);
-    this.setState({ openKeyboard: true });
+    this.setState({ openKeyboard: true, searchValue: '', suggestion: [] });
+    this.keyboard.setInput('');
   };
 
   onSuggestionsFetchRequested = ({ value }) => {
@@ -77,6 +94,21 @@ export default class SearchBar extends Component {
     this.setState({
       suggestions: [],
     });
+  };
+
+  onSuggestionSelected = async (event, { suggestion }) => {
+    const { id, floor_id } = suggestion;
+    const { setPosition, setDescription, setFloor } = this.props;
+
+    const floor_number = parseInt(floor_id.split('_').pop());
+    await setFloor(floor_number);
+
+    await setDescription(suggestion);
+
+    const element = document.getElementById(id);
+    const closestElement = element.closest('.room_block');
+    checkSelectedPos(element, setPosition);
+    closestElement.classList.add('active');
   };
 
   escapeRegexCharacters = str => {
@@ -110,14 +142,6 @@ export default class SearchBar extends Component {
     return section.rooms;
   };
 
-  renderSuggestion = suggestion => {
-    return <span>{`${suggestion.name} | ${suggestion.floor}`}</span>;
-  };
-
-  renderSectionTitle = section => {
-    return <strong>{section.floor}</strong>;
-  };
-
   getAutosuggestProps = () => {
     const { searchValue } = this.state;
     return {
@@ -126,6 +150,14 @@ export default class SearchBar extends Component {
       onChange: this.onChange,
       onFocus: this.handleOnFocus,
     };
+  };
+
+  renderSuggestion = suggestion => {
+    return <span className={styles.suggestionName}>{`${suggestion.name} (${suggestion.category.toLowerCase()})`}</span>;
+  };
+
+  renderSectionTitle = section => {
+    return <span className={styles.suggestionSection}>{section.floor}</span>;
   };
 
   render() {
@@ -143,13 +175,12 @@ export default class SearchBar extends Component {
                   suggestions={suggestions}
                   onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
                   onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+                  onSuggestionSelected={this.onSuggestionSelected}
                   getSuggestionValue={this.getSuggestionValue}
                   renderSuggestion={this.renderSuggestion}
                   renderSectionTitle={this.renderSectionTitle}
                   getSectionSuggestions={this.getSectionSuggestions}
-                  alwaysRenderSuggestions
                   inputProps={this.getAutosuggestProps()}
-                  className={styles.autosuggestComponent}
                 />
                 <Search onClick={this.toggleFocus} />
               </div>
@@ -170,3 +201,5 @@ export default class SearchBar extends Component {
     );
   }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

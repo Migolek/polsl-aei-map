@@ -20,9 +20,12 @@ const floorSlice = createSlice({
         state.currentFloor = state.currentFloor - 1;
       }
     },
+    setFloor: (state, action) => {
+      state.currentFloor = action.payload;
+    },
   },
 });
 
-export const { setUpperFloor, setLowerFloor } = floorSlice.actions;
+export const { setUpperFloor, setLowerFloor, setFloor } = floorSlice.actions;
 
 export default floorSlice;

@@ -13,6 +13,8 @@ import { ReactComponent as Floor9 } from 'assets/map-files/9_floor.svg';
 import { removeDescription, setDescription } from 'store/Hint/description.slice';
 import { setPosition } from 'store/Hint/position.slice';
 
+import { checkSelectedPos } from '../../helpers';
+
 import rooms from './map_legend.json';
 
 import './map-style.css';
@@ -22,6 +24,7 @@ const mapStateToProps = state => ({
   currentFloor: state.map.floor.currentFloor,
   currentRoom: state.hint.description.info.id,
   selectedOptions: state.map.options.selectedOptions,
+  isVisible: state.hint.description.isVisible,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -46,6 +49,7 @@ class Map extends Component {
 
   componentDidMount() {
     document.addEventListener('click', this.handleClickMap);
+    this.checkSelectedOptions();
   }
 
   componentWillUnmount() {
@@ -71,14 +75,17 @@ class Map extends Component {
       this.setHintDescription(roomDescription);
       this.setActiveRoom();
     } else if (!closestElement && !isClickedHint) {
-      this.props.removeDescription();
-      this.setActiveRoom();
+      if (this.props.isVisible) {
+        this.props.removeDescription();
+        this.setActiveRoom();
+      }
     }
   };
 
   setHintPosition = id => {
     const roomElement = document.getElementById(id);
-    this.checkSelectedPos(roomElement);
+    const { setPosition } = this.props;
+    checkSelectedPos(roomElement, setPosition);
   };
 
   setHintDescription = description => {
@@ -110,27 +117,6 @@ class Map extends Component {
         eleDOM && eleDOM.classList.remove('hidden');
       }
     });
-  };
-
-  checkSelectedPos = roomEle => {
-    const roomPos = roomEle.getBoundingClientRect();
-    const hintPos = document.getElementById('map_hint').getBoundingClientRect();
-    const { x, y } = roomPos;
-    const { setPosition } = this.props;
-
-    const STANDARD_POSITION = { x: x - (hintPos.width - roomPos.width) / 2, y: y - 160 };
-
-    if (roomPos.left < 32 + hintPos.width) {
-      setPosition({ x: x + roomPos.width + 16, y: STANDARD_POSITION.y });
-    } else if (roomPos.top < 32 + hintPos.height) {
-      setPosition({ x: STANDARD_POSITION.x, y: y + roomPos.height + 16 });
-    } else if (roomPos.right < 32 + hintPos.width) {
-      setPosition({ x: x - roomPos.width - 16, y: STANDARD_POSITION.y });
-    } else if (roomPos.bottom < 32 + hintPos.height) {
-      setPosition({ x: STANDARD_POSITION.x, y: y - roomPos.height - 16 });
-    } else {
-      setPosition(STANDARD_POSITION);
-    }
   };
 
   renderMap = () => {
