@@ -18,21 +18,19 @@ export default class SearchBar extends Component {
     };
   }
 
-  componentDidMount() {
-    document.addEventListener('click', this.clickedOutside);
-  }
-
   componentWillUnmount() {
     document.removeEventListener('click', this.clickedOutside);
   }
 
   clickedOutside = event => {
     const keyboard = document.getElementById('keyboard_wrapper');
+    const searchbar = document.getElementById('searchbar');
     const isClickedKeyboard = keyboard.contains(event.target);
-    const { openKeyboard } = this.state;
+    const isClickedSearchbar = searchbar.contains(event.target);
 
-    if (openKeyboard && !isClickedKeyboard) {
-      this.toggleKeyboard(false);
+    if (!isClickedSearchbar && !isClickedKeyboard) {
+      this.setState({ openKeyboard: false });
+      document.removeEventListener('click', this.clickedOutside);
     }
   };
 
@@ -40,9 +38,15 @@ export default class SearchBar extends Component {
 
   onChange = value => this.setState({ searchValue: value });
 
-  handleChange = event => this.setState({ searchValue: event.target.value });
+  handleChange = event => {
+    this.setState({ searchValue: event.target.value });
+    this.keyboard.setInput(event.target.value);
+  };
 
-  toggleKeyboard = booleanValue => this.setState({ openKeyboard: booleanValue });
+  handleOnFocus = () => {
+    document.addEventListener('click', this.clickedOutside);
+    this.setState({ openKeyboard: true });
+  };
 
   render() {
     const { isFocused, openKeyboard, searchValue } = this.state;
@@ -50,7 +54,7 @@ export default class SearchBar extends Component {
     return (
       <React.Fragment>
         <div className={classNames(styles.searchbarWrapper, isFocused && styles.focused)}>
-          <div className={styles.searchbar}>
+          <div id="searchbar" className={styles.searchbar}>
             {!isFocused && <Search onClick={this.toggleFocus} />}
             {isFocused && (
               <div className={styles.inputWrapper}>
@@ -58,7 +62,7 @@ export default class SearchBar extends Component {
                   name="search"
                   type="text"
                   value={searchValue}
-                  onFocus={() => this.toggleKeyboard(true)}
+                  onFocus={() => this.handleOnFocus()}
                   onChange={this.handleChange}
                 />
                 <Search onClick={this.toggleFocus} />
@@ -67,7 +71,12 @@ export default class SearchBar extends Component {
           </div>
         </div>
         <div id="keyboard_wrapper" className={classNames(styles.keyboardWrapper, !openKeyboard && styles.hidden)}>
-          <Keyboard inputName={'search'} className={styles.keyboard} onChange={this.onChange} />
+          <Keyboard
+            keyboardRef={ref => (this.keyboard = ref)}
+            inputName={'search'}
+            className={styles.keyboard}
+            onChange={this.onChange}
+          />
         </div>
       </React.Fragment>
     );
