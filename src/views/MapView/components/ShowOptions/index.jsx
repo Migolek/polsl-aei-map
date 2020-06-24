@@ -25,11 +25,6 @@ class ShowOptions extends Component {
           checked: true,
         },
         {
-          name: 'people',
-          label: 'Ludzie',
-          checked: true,
-        },
-        {
           name: 'others',
           label: 'Inne',
           checked: true,

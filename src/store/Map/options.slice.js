@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const optionsSlice = createSlice({
   name: 'options',
   initialState: {
-    selectedOptions: ['Pokoje', 'Aule', 'Ludzie', 'Inne'],
+    selectedOptions: ['Pokoje', 'Aule', 'Inne'],
   },
   reducers: {
     updateSelectedOptions: (state, action) => {
