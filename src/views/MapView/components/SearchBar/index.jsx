@@ -145,7 +145,7 @@ class SearchBar extends Component {
   getAutosuggestProps = () => {
     const { searchValue } = this.state;
     return {
-      placeholder: 'Wpisz frazę',
+      placeholder: 'Sala ...',
       value: searchValue,
       onChange: this.onChange,
       onFocus: this.handleOnFocus,
